@@ -242,6 +242,7 @@
         <image name="RoundedSquare" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="mej-ts-9DZ"/>
         <segue reference="h44-hj-z3m"/>
     </inferredMetricsTieBreakers>
 </document>
