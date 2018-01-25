@@ -200,37 +200,37 @@ class ViewController: UIViewController {
             
         case 16:
             Question.text = "What does 'marginal cost' mean?"
-            Button1.setTitle("", for: UIControlState.normal)
-            Button2.setTitle("", for: UIControlState.normal)
-            Button3.setTitle("Marginal cost is the addition to total cost of producing one extra unit of output.", for: UIControlState.normal)
-            Button4.setTitle("", for: UIControlState.normal)
+            Button1.setTitle("The complete cost of producing a level of output. ", for: UIControlState.normal)
+            Button2.setTitle("A persistent increase in the average price level that comes about as a result of increases in the costs of production and a decrease in aggregate supply (AS).", for: UIControlState.normal)
+            Button3.setTitle("The addition to total cost of producing one extra unit of output.", for: UIControlState.normal)
+            Button4.setTitle("The private cost to the consumer of producing an additional unit of output.", for: UIControlState.normal)
             correctAnswer = "3"
             break
             
         case 17:
             Question.text = "What does 'market' mean?"
             Button1.setTitle("A place where buyers and sellers of a product come together to make an exchange, or a trade. A market does not need to be a physical place, e.g. a stock market or foreign exchange market, where the product is traded via computers.", for: UIControlState.normal)
-            Button2.setTitle("", for: UIControlState.normal)
-            Button3.setTitle("", for: UIControlState.normal)
-            Button4.setTitle("", for: UIControlState.normal)
+            Button2.setTitle("A large number of small firms, producing differentiated products, with no barriers to entry or exit.", for: UIControlState.normal)
+            Button3.setTitle("Goods which are produced together, or where the production of one good involves the production of another product, e.g. meat and leather (a by-product).", for: UIControlState.normal)
+            Button4.setTitle("Where firms in an oligopoly do not resort to agreements to fix prices or output. Competition tends to be non-price. Prices tend to be stable.", for: UIControlState.normal)
             correctAnswer = "1"
             break
             
         case 18:
             Question.text = "What does 'equilibrium' mean?"
-            Button1.setTitle("", for: UIControlState.normal)
+            Button1.setTitle("The point where the quantity of a product demanded is not equal to the quantity of a product supplied. This creates the market clearing price and quantity where there is excess demand or excess supply.", for: UIControlState.normal)
             Button2.setTitle("The point where the quantity of a product demanded is equal to the quantity of a product supplied. This creates the market clearing price and quantity where there is no excess demand or excess supply.", for: UIControlState.normal)
-            Button3.setTitle("", for: UIControlState.normal)
-            Button4.setTitle("", for: UIControlState.normal)
+            Button3.setTitle("The point where the quantity of a product produced is equal to the quantity of a product bought. This creates the market clearing price and quantity where there is no excess demand or excess supply.", for: UIControlState.normal)
+            Button4.setTitle("The point where the quantity of a product produced is not equal to the quantity of a product bought. This creates the market clearing price and quantity where there is no excess demand or excess supply.", for: UIControlState.normal)
             correctAnswer = "2"
             break
             
         case 19:
             Question.text = "What does 'monopoly' mean?"
             Button1.setTitle("A market structure where there is only one firm, or a dominant firm, in the industry. There are high barriers to entry.", for: UIControlState.normal)
-            Button2.setTitle("", for: UIControlState.normal)
-            Button3.setTitle("", for: UIControlState.normal)
-            Button4.setTitle("", for: UIControlState.normal)
+            Button2.setTitle("A market structure characterized by a small number of large firms dominating the industry due to high barriers to entry.", for: UIControlState.normal)
+            Button3.setTitle("A market structure charaterized by a large number of small firms, producing differentiated products, with no barriers to entry or exit.", for: UIControlState.normal)
+            Button4.setTitle("A market structure where there are multiple firms in the industry. There are no barriers to entry.", for: UIControlState.normal)
             correctAnswer = "1"
             break
             
