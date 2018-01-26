@@ -348,6 +348,7 @@ class ViewController: UIViewController {
         }
         else{
             NSLog("Incorrect!")
+            self.performSegue(withIdentifier: "ShowIncorrectScreen", sender: nil)
         }
     }
     
@@ -358,6 +359,7 @@ class ViewController: UIViewController {
         }
         else{
             NSLog("Incorrect!")
+            self.performSegue(withIdentifier: "ShowIncorrectScreen", sender: nil)
         }
     }
     
@@ -368,6 +370,7 @@ class ViewController: UIViewController {
         }
         else{
             NSLog("Incorrect!")
+            self.performSegue(withIdentifier: "ShowIncorrectScreen", sender: nil)
         }
     }
     
@@ -378,6 +381,7 @@ class ViewController: UIViewController {
         }
         else{
             NSLog("Incorrect!")
+            self.performSegue(withIdentifier: "ShowIncorrectScreen", sender: nil)
         }
     }
     
