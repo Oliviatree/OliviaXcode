@@ -254,7 +254,7 @@ class ViewController: UIViewController {
             
         case 22:
             Question.text = "What does 'revenue' mean?"
-            Button1.setTitle("", for: UIControlState.normal)
+            Button1.setTitle("Import barriers that set limits on the quantity or value of imports that may be imported into a country", for: UIControlState.normal)
             Button2.setTitle("The income received by a firm from selling its product.", for: UIControlState.normal)
             Button3.setTitle("", for: UIControlState.normal)
             Button4.setTitle("", for: UIControlState.normal)
