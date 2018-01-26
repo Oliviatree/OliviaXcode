@@ -237,9 +237,9 @@ class ViewController: UIViewController {
         case 20:
             Question.text = "What does 'opportunity cost' mean?"
             Button1.setTitle("The next best alternative foregone (sacrificed) when an economic decision is made.", for: UIControlState.normal)
-            Button2.setTitle("", for: UIControlState.normal)
-            Button3.setTitle("", for: UIControlState.normal)
-            Button4.setTitle("", for: UIControlState.normal)
+            Button2.setTitle("The addition to total cost of producing one extra unit of output (MC = ∆TC/DQ).", for: UIControlState.normal)
+            Button3.setTitle("Costs that do not vary with the level of output.", for: UIControlState.normal)
+            Button4.setTitle("Include the complete cost of producing a level of output.", for: UIControlState.normal)
             correctAnswer = "1"
             break
             
