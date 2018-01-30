@@ -389,5 +389,18 @@ class ViewController: UIViewController {
         randomQuestions()
     }    
    
+ //Score
+    
+    @IBOutlet weak var Score: UILabel!
+    
+    
+    
 }
+
+
+
+
+
+
+
 
