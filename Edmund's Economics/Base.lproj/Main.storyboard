@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1dz-IS-KEB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1dz-IS-KEB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start Screen View Controller-->
         <scene sceneID="Isb-CC-V4s">
             <objects>
-                <viewController id="1dz-IS-KEB" customClass="ViewController" customModule="Edmund_s_Economics" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1dz-IS-KEB" customClass="StartScreenViewController" customModule="Edmund_s_Economics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fz1-fO-Brb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,17 +22,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RoundedSquare" translatesAutoresizingMaskIntoConstraints="NO" id="BJG-cW-krC">
-                                <rect key="frame" x="32" y="47" width="205" height="113"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sR-Cn-sx3">
-                                <rect key="frame" x="57" y="106" width="51" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vq4-P2-UOJ">
@@ -45,7 +34,6 @@
                                 </state>
                                 <connections>
                                     <action selector="StartReview:" destination="hV5-d8-MOL" eventType="touchUpInside" id="FkC-Dg-CdY"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="wfx-f4-JuC"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EdmundElephantIcon" translatesAutoresizingMaskIntoConstraints="NO" id="IPw-5T-EIe" userLabel="Text Bubble Displaying Question">
@@ -61,23 +49,13 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="StartReview:" destination="hV5-d8-MOL" eventType="touchUpInside" id="BEf-XU-3xA"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="3Vh-6O-WSu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGy-Sv-0En">
-                                <rect key="frame" x="57" y="70" width="64" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.52500879764556885" green="0.73218333721160889" blue="0.96474182605743408" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="Vp0-VL-rwX"/>
                     </view>
-                    <connections>
-                        <outlet property="Score" destination="cGy-Sv-0En" id="Dk8-Nk-m4h"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QB6-3J-2Yj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="hV5-d8-MOL" userLabel="Exit" sceneMemberID="exit"/>
@@ -179,9 +157,37 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1dz-IS-KEB" kind="show" id="fyz-UT-t5p"/>
+                                    <segue destination="1dz-IS-KEB" kind="show" id="gYM-H4-vvC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIZ-KZ-VUH">
+                                <rect key="frame" x="16" y="193" width="51" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccx-i5-1k5">
+                                <rect key="frame" x="259" y="193" width="53" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOV-0Q-vYo" userLabel="ScoreValue">
+                                <rect key="frame" x="73" y="193" width="42" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e30-V1-UsE" userLabel="LevelValue">
+                                <rect key="frame" x="318" y="193" width="42" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.46220504414625496" green="0.73846620797615936" blue="0.9854087233543396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -193,18 +199,19 @@
                         <outlet property="Button3" destination="6Hg-Md-OR9" id="Sd2-Qk-YFc"/>
                         <outlet property="Button4" destination="hc3-LS-Zt6" id="S8A-R4-oNA"/>
                         <outlet property="Question" destination="gRr-sE-f3M" id="AfS-Oa-WdY"/>
+                        <outlet property="scoreDisplay" destination="XOV-0Q-vYo" id="BL5-xa-T4i"/>
                         <segue destination="x8q-WV-6jJ" kind="show" identifier="ShowCorrectScreen" id="mej-ts-9DZ"/>
                         <segue destination="jeR-8K-tWL" kind="show" identifier="ShowIncorrectScreen" id="Aqr-lA-CMb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85.599999999999994" y="175.86206896551727"/>
+            <point key="canvasLocation" x="-31.199999999999999" y="175.86206896551727"/>
         </scene>
-        <!--View Controller-->
+        <!--Correct Answer View Controller-->
         <scene sceneID="GcF-Ix-IaU">
             <objects>
-                <viewController id="x8q-WV-6jJ" customClass="ViewController" customModule="Edmund_s_Economics" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="x8q-WV-6jJ" customClass="CorrectAnswerViewController" customModule="Edmund_s_Economics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5dP-sZ-uNT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,7 +233,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="h44-hj-z3m"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="BdY-Lh-LHb"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ke7-Yl-sxA">
@@ -257,12 +264,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dx5-9Z-CNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="829.60000000000002" y="175.86206896551727"/>
+            <point key="canvasLocation" x="710" y="176"/>
         </scene>
-        <!--View Controller-->
+        <!--Incorrect Answer View Controller-->
         <scene sceneID="13S-Se-adP">
             <objects>
-                <viewController id="jeR-8K-tWL" customClass="ViewController" customModule="Edmund_s_Economics" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jeR-8K-tWL" customClass="IncorrectAnswerViewController" customModule="Edmund_s_Economics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ibp-2H-cL4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -301,7 +308,7 @@
                                             <color key="titleColor" red="0.99977153644487238" green="1" blue="0.99388442489115048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="PGd-KS-PIR"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="Z0T-M8-PO8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -321,16 +328,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jjm-5R-ixM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1504.8" y="175.86206896551727"/>
+            <point key="canvasLocation" x="1471" y="176"/>
         </scene>
     </scenes>
     <resources>
         <image name="EdmundElephantIcon" width="200" height="157"/>
         <image name="GraySpeechBubble" width="591" height="261"/>
         <image name="RightArrow" width="1600" height="1600"/>
-        <image name="RoundedSquare" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wfx-f4-JuC"/>
+        <segue reference="mej-ts-9DZ"/>
+        <segue reference="BdY-Lh-LHb"/>
     </inferredMetricsTieBreakers>
 </document>

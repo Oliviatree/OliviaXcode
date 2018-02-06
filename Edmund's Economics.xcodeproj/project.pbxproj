@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		059D20C0202850EF00000825 /* CorrectAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D20BF202850EF00000825 /* CorrectAnswerViewController.swift */; };
+		059D20C22028579700000825 /* IncorrectAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D20C12028579700000825 /* IncorrectAnswerViewController.swift */; };
+		059D20C4202858C100000825 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D20C3202858C100000825 /* StartScreenViewController.swift */; };
 		05E2550C2014BAB600E25201 /* ElephantCall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 05E2550B2014BAB600E25201 /* ElephantCall.mp3 */; };
 		C3439CDD1FF289D200A37461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3439CDC1FF289D200A37461 /* AppDelegate.swift */; };
 		C3439CDF1FF289D200A37461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3439CDE1FF289D200A37461 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		059D20BF202850EF00000825 /* CorrectAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectAnswerViewController.swift; sourceTree = "<group>"; };
+		059D20C12028579700000825 /* IncorrectAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncorrectAnswerViewController.swift; sourceTree = "<group>"; };
+		059D20C3202858C100000825 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		05E2550B2014BAB600E25201 /* ElephantCall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ElephantCall.mp3; sourceTree = "<group>"; };
 		C3439CD91FF289D200A37461 /* Edmund's Economics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Edmund's Economics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3439CDC1FF289D200A37461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +64,9 @@
 			children = (
 				C3439CDC1FF289D200A37461 /* AppDelegate.swift */,
 				C3439CDE1FF289D200A37461 /* ViewController.swift */,
+				059D20C12028579700000825 /* IncorrectAnswerViewController.swift */,
+				059D20C3202858C100000825 /* StartScreenViewController.swift */,
+				059D20BF202850EF00000825 /* CorrectAnswerViewController.swift */,
 				C3439CE01FF289D200A37461 /* Main.storyboard */,
 				C3439CE31FF289D200A37461 /* Assets.xcassets */,
 				05E2550B2014BAB600E25201 /* ElephantCall.mp3 */,
@@ -142,6 +151,9 @@
 			files = (
 				C3439CDF1FF289D200A37461 /* ViewController.swift in Sources */,
 				C3439CDD1FF289D200A37461 /* AppDelegate.swift in Sources */,
+				059D20C22028579700000825 /* IncorrectAnswerViewController.swift in Sources */,
+				059D20C0202850EF00000825 /* CorrectAnswerViewController.swift in Sources */,
+				059D20C4202858C100000825 /* StartScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

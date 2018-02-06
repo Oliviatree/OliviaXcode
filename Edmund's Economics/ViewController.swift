@@ -12,6 +12,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
     var elephantSound: AVAudioPlayer?
+    var quizScore = 0
     
     //Questions
     @IBOutlet weak var Question: UILabel!
@@ -22,15 +23,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var Button2: UIButton!
     @IBOutlet weak var Button3: UIButton!
     @IBOutlet weak var Button4: UIButton!
+    @IBOutlet weak var scoreDisplay: UILabel!
     
     //Correct Answers
     var correctAnswer = String()
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        playSound()
-        randomQuestions()
+         NSLog("VC Loaded")
+         randomQuestions()
+         NSLog("Score \(quizScore)")
+         scoreDisplay.text = "\(quizScore)"
     }
     
     override func didReceiveMemoryWarning() {
@@ -53,7 +57,7 @@ class ViewController: UIViewController {
             print(error.localizedDescription)
             }
      }
-
+    
     //Randomizer
     func randomQuestions ()
     {
@@ -80,7 +84,7 @@ class ViewController: UIViewController {
             Button4.setTitle("(Of costs or benefits) Relating to or resulting from large changes, supplementary.", for: UIControlState.normal)
             correctAnswer = "2"
             break
-            
+
         case 3:
             Question.text = "What does 'capital' mean?"
             Button1.setTitle("The government’s bank. The institution that is responsible for an economy’s monetary policy.", for: UIControlState.normal)
@@ -89,7 +93,7 @@ class ViewController: UIViewController {
             Button4.setTitle("Spending by households on goods and services.", for: UIControlState.normal)
             correctAnswer = "3"
             break
-            
+
         case 4:
             Question.text = "What does 'demand' mean?"
             Button1.setTitle("The amount of a good or service that producers are willing and able to supply at a given price in a given time period.", for: UIControlState.normal)
@@ -98,7 +102,7 @@ class ViewController: UIViewController {
             Button4.setTitle("The external costs to third party that occur when a product is produced.", for: UIControlState.normal)
             correctAnswer = "2"
             break
-            
+
         case 5:
             Question.text = "What does 'ceteris paribus' mean?"
             Button1.setTitle("A latin expression meaning 'a measure of the international flow of funds from trade in goods and services' used by economists to develop economic theories or models.", for: UIControlState.normal)
@@ -107,7 +111,7 @@ class ViewController: UIViewController {
             Button4.setTitle("A latin expression meaning ‘let all other things remain equal’ used by economists to develop economic theories or models.", for: UIControlState.normal)
             correctAnswer = "4"
             break
-            
+
         case 6:
             Question.text = "What is the 'circular flow of income model'?"
             Button1.setTitle("A simplified model of the economy that shows the flow of money through the economy.", for: UIControlState.normal)
@@ -116,7 +120,7 @@ class ViewController: UIViewController {
             Button4.setTitle("A simplified model of the economy that shows the flow of resources through the economy.", for: UIControlState.normal)
             correctAnswer = "1"
             break
-            
+
         case 7:
             Question.text = "What is a 'complementary good'?"
             Button1.setTitle("Goods which are produced together, or where the production of one good involves the production of another product, e.g. meat and leather (a by-product).", for: UIControlState.normal)
@@ -125,7 +129,6 @@ class ViewController: UIViewController {
             Button4.setTitle("Goods used in combination with each other, e.g. digital cameras and memory cards.", for: UIControlState.normal)
             correctAnswer = "4"
             break
-            
         case 8:
             Question.text = "What does 'depreciation' mean?"
             Button1.setTitle("A gradual fall in the average level of prices.", for: UIControlState.normal)
@@ -134,7 +137,7 @@ class ViewController: UIViewController {
             Button4.setTitle("A fall in the rate of inflation.", for: UIControlState.normal)
             correctAnswer = "3"
             break
-            
+
         case 9:
             Question.text = "What does 'economic growth' mean?"
             Button1.setTitle("An increase in average costs in the long run.", for: UIControlState.normal)
@@ -143,7 +146,7 @@ class ViewController: UIViewController {
             Button4.setTitle("An increase in the actual level of output of goods and services produced by an economy, i.e. an increase in real GDP over time.", for: UIControlState.normal)
             correctAnswer = "4"
             break
-            
+
         case 10:
             Question.text = "What is an 'exchange rate'?"
             Button1.setTitle("The factor of production that is made by humans and is used to produce goods and services. It occurs as a result of investment.", for: UIControlState.normal)
@@ -152,7 +155,7 @@ class ViewController: UIViewController {
             Button4.setTitle("Any association of one or more countries where an agreement is made to reduce trade barriers.", for: UIControlState.normal)
             correctAnswer = "2"
             break
-            
+
         case 11:
             Question.text = "What does 'fixed costs' mean?"
             Button1.setTitle("Costs that do not vary with the level of input.", for: UIControlState.normal)
@@ -161,16 +164,16 @@ class ViewController: UIViewController {
             Button4.setTitle("Costs which change depending on the currency.", for: UIControlState.normal)
             correctAnswer = "2"
             break
-            
-        case 12:
-            Question.text = "What is a 'free trade area'?"
-            Button1.setTitle("An agreement made between countries, where the countries agree to work towards free trade among themselves, but are able to trade with countries outside the free trade area in whatever way they wish.", for: UIControlState.normal)
-            Button2.setTitle("An exchange rate regime where the value of a currency is allowed to be determined solely by the demand for, and supply of, the currency on the foreign exchange market.", for: UIControlState.normal)
+
+       case 12:
+        Question.text = "What is a 'free trade area'?"
+           Button1.setTitle("An agreement made between countries, where the countries agree to work towards free trade among themselves, but are able to trade with countries outside the free trade area in whatever way they wish.", for: UIControlState.normal)
+        Button2.setTitle("An exchange rate regime where the value of a currency is allowed to be determined solely by the demand for, and supply of, the currency on the foreign exchange market.", for: UIControlState.normal)
             Button3.setTitle("An exchange rate regime where the value of a currency is fixed, or pegged, to the value of another currency, (or to the average value of a selection of currencies, or to the value of some other commodity, e.g. gold).", for: UIControlState.normal)
-            Button4.setTitle("The set of government polices concerning its taxation and expenditure. Fiscal policy may be used to manage the level of aggregate demand (AD) and may be expansionary (to raise AD) or contractionary (to lower AD).", for: UIControlState.normal)
-            correctAnswer = "1"
-            break
-            
+         Button4.setTitle("The set of government polices concerning its taxation and expenditure. Fiscal policy may be used to manage the level of aggregate demand (AD) and may be expansionary (to raise AD) or contractionary (to lower AD).", for: UIControlState.normal)
+      correctAnswer = "1"
+         break
+
         case 13:
             Question.text = "What does 'investment' mean?"
             Button1.setTitle("The action or process of investing money for profit.", for: UIControlState.normal)
@@ -179,7 +182,7 @@ class ViewController: UIViewController {
             Button4.setTitle("The amount of money given to producers of a product by the government. A subsidy increases the supply of the good by effectively lowering the firms’ costs of production.", for: UIControlState.normal)
             correctAnswer = "2"
             break
-            
+
         case 14:
             Question.text = "What is the 'law of demand'?"
             Button1.setTitle("The income received by a firm from selling its product.", for: UIControlState.normal)
@@ -342,8 +345,11 @@ class ViewController: UIViewController {
     //Buttons Action
     
     @IBAction func ButtonOnePressed(_ sender: UIButton) {
+        randomQuestions()
         if (correctAnswer == "1") {
             NSLog("Correct!")
+            quizScore = quizScore + 10
+            playSound()
             self.performSegue(withIdentifier: "ShowCorrectScreen", sender: nil)
         }
         else{
@@ -353,8 +359,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Button2Action(_ sender: Any) {
+        randomQuestions()
         if (correctAnswer == "2") {
             NSLog("Correct!")
+            quizScore = quizScore + 10
+            playSound()
             self.performSegue(withIdentifier: "ShowCorrectScreen", sender: nil)
         }
         else{
@@ -364,8 +373,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Button3Action(_ sender: Any) {
+        randomQuestions()
         if (correctAnswer == "3") {
             NSLog("Correct!")
+            quizScore = quizScore + 10
+            playSound()
             self.performSegue(withIdentifier: "ShowCorrectScreen", sender: nil)
         }
         else{
@@ -375,8 +387,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Button4Action(_ sender: Any) {
+        randomQuestions()
         if (correctAnswer == "4") {
             NSLog("Correct!")
+            quizScore = quizScore + 10
+            playSound()
             self.performSegue(withIdentifier: "ShowCorrectScreen", sender: nil)
         }
         else{
@@ -387,14 +402,20 @@ class ViewController: UIViewController {
     
     @IBAction func NextQuestion(_ sender: Any) {
         randomQuestions()
-    }    
-   
- //Score
+    }
     
-    @IBOutlet weak var Score: UILabel!
-    
-    
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? CorrectAnswerViewController {
+            destination.holdPoints = quizScore
+        }
+        if let destination = segue.destination as? IncorrectAnswerViewController {
+            destination.holdPoints = quizScore
+        }
+ //       if let destination = segue.destination as? StartScreenViewController {
+ //           destination.holdPoints = quizScore
+ //       }
+    }
+  
 }
 
 
