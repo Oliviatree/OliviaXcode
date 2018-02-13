@@ -348,7 +348,7 @@ class ViewController: UIViewController {
         randomQuestions()
         if (correctAnswer == "1") {
             NSLog("Correct!")
-            quizScore = quizScore + 10
+            quizScore = quizScore + 100
             playSound()
             self.performSegue(withIdentifier: "ShowCorrectScreen", sender: nil)
         }
@@ -362,7 +362,7 @@ class ViewController: UIViewController {
         randomQuestions()
         if (correctAnswer == "2") {
             NSLog("Correct!")
-            quizScore = quizScore + 10
+            quizScore = quizScore + 100
             playSound()
             self.performSegue(withIdentifier: "ShowCorrectScreen", sender: nil)
         }
@@ -376,7 +376,7 @@ class ViewController: UIViewController {
         randomQuestions()
         if (correctAnswer == "3") {
             NSLog("Correct!")
-            quizScore = quizScore + 10
+            quizScore = quizScore + 100
             playSound()
             self.performSegue(withIdentifier: "ShowCorrectScreen", sender: nil)
         }
@@ -390,7 +390,7 @@ class ViewController: UIViewController {
         randomQuestions()
         if (correctAnswer == "4") {
             NSLog("Correct!")
-            quizScore = quizScore + 10
+            quizScore = quizScore + 100
             playSound()
             self.performSegue(withIdentifier: "ShowCorrectScreen", sender: nil)
         }
