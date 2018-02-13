@@ -345,10 +345,9 @@ class ViewController: UIViewController {
     //Buttons Action
     
     @IBAction func ButtonOnePressed(_ sender: UIButton) {
-        randomQuestions()
         if (correctAnswer == "1") {
             NSLog("Correct!")
-            quizScore = quizScore + 100
+            quizScore = quizScore + 10
             playSound()
             self.performSegue(withIdentifier: "ShowCorrectScreen", sender: nil)
         }
@@ -359,10 +358,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Button2Action(_ sender: Any) {
-        randomQuestions()
         if (correctAnswer == "2") {
             NSLog("Correct!")
-            quizScore = quizScore + 100
+            quizScore = quizScore + 10
             playSound()
             self.performSegue(withIdentifier: "ShowCorrectScreen", sender: nil)
         }
@@ -373,10 +371,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Button3Action(_ sender: Any) {
-        randomQuestions()
         if (correctAnswer == "3") {
             NSLog("Correct!")
-            quizScore = quizScore + 100
+            quizScore = quizScore + 10
             playSound()
             self.performSegue(withIdentifier: "ShowCorrectScreen", sender: nil)
         }
@@ -387,10 +384,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Button4Action(_ sender: Any) {
-        randomQuestions()
         if (correctAnswer == "4") {
             NSLog("Correct!")
-            quizScore = quizScore + 100
+            quizScore = quizScore + 10
             playSound()
             self.performSegue(withIdentifier: "ShowCorrectScreen", sender: nil)
         }

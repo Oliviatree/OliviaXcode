@@ -264,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dx5-9Z-CNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="710" y="176"/>
+            <point key="canvasLocation" x="740" y="176"/>
         </scene>
         <!--Incorrect Answer View Controller-->
         <scene sceneID="13S-Se-adP">
@@ -337,6 +337,7 @@
         <image name="RightArrow" width="1600" height="1600"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="mej-ts-9DZ"/>
         <segue reference="BdY-Lh-LHb"/>
     </inferredMetricsTieBreakers>
 </document>
