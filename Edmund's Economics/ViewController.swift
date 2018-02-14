@@ -13,7 +13,7 @@ import AVFoundation
 class ViewController: UIViewController {
     var elephantSound: AVAudioPlayer?
     var quizScore = 0
-    var quizLevel = 0
+    var quizLevel = String()
     
     //Questions
     @IBOutlet weak var Question: UILabel!
@@ -29,28 +29,26 @@ class ViewController: UIViewController {
     
     //Correct Answers
     var correctAnswer = String()
- 
+    var Level = String()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
          NSLog("VC Loaded")
          randomQuestions()
          NSLog("Score \(quizScore)")
+        if (quizScore < 10000) {
+            quizLevel = "Peasant"
+        }
+            else (quizScore < 20000  )
+        {
+            
+        }
          scoreDisplay.text = "\(quizScore)"
-        
-    //Level
-    var Level = String()
-        
-        
-        func viewDidLoad() {
-        super.viewDidLoad()
-        NSLog("VC Loaded")
-        randomQuestions()
+         levelDisplay.text = "\(quizLevel)"
         NSLog("Level \(quizLevel)")
-        levelDisplay.text = "\(quizLevel)"
     }
-  
-}
+
     
     
     override func didReceiveMemoryWarning() {
@@ -357,6 +355,7 @@ class ViewController: UIViewController {
             break
         }
     }
+
 
     //Buttons Action
     

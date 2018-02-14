@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1dz-IS-KEB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1dz-IS-KEB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -199,6 +199,7 @@
                         <outlet property="Button3" destination="6Hg-Md-OR9" id="Sd2-Qk-YFc"/>
                         <outlet property="Button4" destination="hc3-LS-Zt6" id="S8A-R4-oNA"/>
                         <outlet property="Question" destination="gRr-sE-f3M" id="AfS-Oa-WdY"/>
+                        <outlet property="levelDisplay" destination="e30-V1-UsE" id="xXT-GS-S6b"/>
                         <outlet property="scoreDisplay" destination="XOV-0Q-vYo" id="BL5-xa-T4i"/>
                         <segue destination="x8q-WV-6jJ" kind="show" identifier="ShowCorrectScreen" id="mej-ts-9DZ"/>
                         <segue destination="jeR-8K-tWL" kind="show" identifier="ShowIncorrectScreen" id="Aqr-lA-CMb"/>
