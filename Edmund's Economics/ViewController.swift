@@ -32,24 +32,29 @@ class ViewController: UIViewController {
     var Level = String()
     
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
          NSLog("VC Loaded")
          randomQuestions()
          NSLog("Score \(quizScore)")
-        if (quizScore < 10000) {
-            quizLevel = "Peasant"
-        }
-            else (quizScore < 20000  )
+        if (quizScore < 1000)
         {
-            
+          quizLevel = "Peasant"
         }
+        else if (quizScore < 2000)
+        {
+          quizLevel = "Merchant"
+        }
+        else if (quizScore < 3000)
+        {
+                quizLevel = "Knight"
+        }
+        
          scoreDisplay.text = "\(quizScore)"
          levelDisplay.text = "\(quizLevel)"
         NSLog("Level \(quizLevel)")
     }
-
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
