@@ -267,10 +267,10 @@ class ViewController: UIViewController {
             
         case 21:
             Question.text = "What does 'profit' mean?"
-            Button1.setTitle("", for: UIControlState.normal)
-            Button2.setTitle("", for: UIControlState.normal)
+            Button1.setTitle("Spending by the government on goods and services.", for: UIControlState.normal)
+            Button2.setTitle("Occurs where the price of a good is lower than the equilibrium price.", for: UIControlState.normal)
             Button3.setTitle("The difference between the price of a product and the costs of production that product. Also the difference between total revenue and total costs.  Also the difference between average revenue and average costs.", for: UIControlState.normal)
-            Button4.setTitle("", for: UIControlState.normal)
+            Button4.setTitle("Spending by household on consumer goods and services.", for: UIControlState.normal)
             correctAnswer = "3"
             break
             
@@ -278,80 +278,80 @@ class ViewController: UIViewController {
             Question.text = "What does 'revenue' mean?"
             Button1.setTitle("Import barriers that set limits on the quantity or value of imports that may be imported into a country", for: UIControlState.normal)
             Button2.setTitle("The income received by a firm from selling its product.", for: UIControlState.normal)
-            Button3.setTitle("", for: UIControlState.normal)
-            Button4.setTitle("", for: UIControlState.normal)
+            Button3.setTitle("Total outstanding borrowings of a central government comprising of internal dept incurred in financing its expenditure.", for: UIControlState.normal)
+            Button4.setTitle("A good whose demand falls as income rises. An inferior good has negative income elasticity.", for: UIControlState.normal)
             correctAnswer = "2"
             break
             
         case 23:
             Question.text = "What does 'scarcity' mean?"
-            Button1.setTitle("", for: UIControlState.normal)
-            Button2.setTitle("", for: UIControlState.normal)
-            Button3.setTitle("", for: UIControlState.normal)
+            Button1.setTitle(" Occurs when the production of a good does not take place at the socially efficient level of output.", for: UIControlState.normal)
+            Button2.setTitle("The rate of unemployment that is consistent with a stable rate of inflation. It is the rate of unemployment that exists when the economy is at the full employment level of output. It is the rate where the long run Phillips curve touches the x-axis.", for: UIControlState.normal)
+            Button3.setTitle("Export revenues minus import expenditure.", for: UIControlState.normal)
             Button4.setTitle("When wants and or needs (infinite)  exceed  resources (finite).", for: UIControlState.normal)
             correctAnswer = "4"
             break
             
         case 24:
             Question.text = "What does 'shortage' mean?"
-            Button1.setTitle("", for: UIControlState.normal)
-            Button2.setTitle("", for: UIControlState.normal)
+            Button1.setTitle("A decrease in the value of a country’s currency in a fixed exchange rate system.", for: UIControlState.normal)
+            Button2.setTitle(" Unemployment that occurs when people are entering the workforce after leaving education, or people who have left one job and are searching for a new job.", for: UIControlState.normal)
             Button3.setTitle("Occurs where the price of a good is lower than the equilibrium price, such that the quantity demanded is greater than the quantity supplied.", for: UIControlState.normal)
-            Button4.setTitle("", for: UIControlState.normal)
+            Button4.setTitle("The gap that occurs when macroeconomic equilibrium occurs at a level that is above the full employment level of output.", for: UIControlState.normal)
             correctAnswer = "3"
             break
             
         case 25:
             Question.text = "What does 'subsidy' mean?"
-            Button1.setTitle("", for: UIControlState.normal)
-            Button2.setTitle("", for: UIControlState.normal)
-            Button3.setTitle("", for: UIControlState.normal)
-            Button4.setTitle("", for: UIControlState.normal)
+            Button1.setTitle("The amount of money given to producers of a product by the government. A subsidy increases the supply of the good by effectively lowering the firms’ costs of production.", for: UIControlState.normal)
+            Button2.setTitle("The extra benefit or utility to society of consuming an additional unit of output, including both the private benefit and the external benefits.", for: UIControlState.normal)
+            Button3.setTitle("Goods that have been processed by workers.", for: UIControlState.normal)
+            Button4.setTitle("A persistent increase in the average level of prices.", for: UIControlState.normal)
             correctAnswer = "1"
             break
             
         case 26:
             Question.text = "What does 'substitute good' mean?"
-            Button1.setTitle("", for: UIControlState.normal)
+            Button1.setTitle("Products that are considered to be beneficial for people that would be under-provided or under-consumed in a purely free market economy. Merit goods are generally considered to be products whose consumption create positive externalities of consumption.", for: UIControlState.normal)
             Button2.setTitle("The amount of money given to producers of a product by the government. A subsidy increases the supply of the good by effectively lowering the firms’ costs of production.", for: UIControlState.normal)
-            Button3.setTitle("", for: UIControlState.normal)
-            Button4.setTitle("", for: UIControlState.normal)
+            Button3.setTitle("A market structure characterized by a small number of large firms dominating the industry due to high barriers to entry. There are many different theories of oligopoly.", for: UIControlState.normal)
+            Button4.setTitle("A situation where there are only enough economies of scale available in a market to support one firm, such that it is natural that the industry be dominated by one firm only.", for: UIControlState.normal)
             correctAnswer = "2"
             break
             
         case 27:
             Question.text = "What does 'supply' mean?"
-            Button1.setTitle("", for: UIControlState.normal)
-            Button2.setTitle("", for: UIControlState.normal)
-            Button3.setTitle("", for: UIControlState.normal)
+            Button1.setTitle("Loans of small amounts that given to people who use the loans to start up small-scale businesses. People who obtain micro-credit would have difficulty getting loans from the formal banking sector due to a lack of income and collateral.", for: UIControlState.normal)
+            Button2.setTitle("The external costs to a third party that occur when a product is consumed.", for: UIControlState.normal)
+            Button3.setTitle("When the value of a currency is believed to be higher than what is perceived to be its market equilibrium value, based on its balance of payments position or its international purchasing power.", for: UIControlState.normal)
             Button4.setTitle("The amount of a good or service that producers are willing and able to supply at a given price in a given time period.", for: UIControlState.normal)
             correctAnswer = "4"
             break
             
         case 28:
             Question.text = "What does 'surplus' mean?"
-            Button1.setTitle("", for: UIControlState.normal)
-            Button2.setTitle("", for: UIControlState.normal)
+            Button1.setTitle("A type of supply-side policy where the government sells public assets to the private sector.", for: UIControlState.normal)
+            Button2.setTitle("A strategy employed by producers where they attempt to make their products different from those of their competitors, e.g. differences in quality, performance, design, styling or packaging. It is a form of non-price competition.", for: UIControlState.normal)
             Button3.setTitle("Occurs where the price of a good is higher than the equilibrium price, such that the quantity supplied is greater than the quantity demanded.", for: UIControlState.normal)
-            Button4.setTitle("", for: UIControlState.normal)
+            Button4.setTitle("A product which is non-rivalrous and non-excludable and so would not be provided at all in a purely free market economy.", for: UIControlState.normal)
             correctAnswer = "3"
             break
             
         case 29:
             Question.text = "What does 'trade' mean?"
-            Button1.setTitle("", for: UIControlState.normal)
-            Button2.setTitle("", for: UIControlState.normal)
+            Button1.setTitle("The income received by a firm from selling its product.", for: UIControlState.normal)
+            Button2.setTitle("Grants or loans that are given to a country, but only on the condition that the funds are used to buy goods and services from the donor country.", for: UIControlState.normal)
             Button3.setTitle("The exchange of goods or services between two countries.", for: UIControlState.normal)
-            Button4.setTitle("", for: UIControlState.normal)
+            Button4.setTitle("The amount of money given to producers of a product by the government. A subsidy increases the supply of the good by effectively lowering the firms’ costs of production.", for: UIControlState.normal)
             correctAnswer = "3"
             break
             
         case 30:
             Question.text = "What does 'utility' mean?"
-            Button1.setTitle("", for: UIControlState.normal)
-            Button2.setTitle("", for: UIControlState.normal)
-            Button3.setTitle("", for: UIControlState.normal)
-            Button4.setTitle("", for: UIControlState.normal)
+            Button1.setTitle("a measure of satisfaction gained by a consumer from the consumption of a product (measured in utils)", for: UIControlState.normal)
+            Button2.setTitle("Occurs when the entry of a country into a customs union leads to the production of a good moving from a low-cost producer out-side the union to a high-cost producer inside the union.", for: UIControlState.normal)
+            Button3.setTitle("A duty (tax) that is placed upon imports to protect domestic industries from foreign competition.", for: UIControlState.normal)
+            Button4.setTitle("A graphical representation of short-run average costs. The SRAC is u-shaped due to the law of diminishing marginal returns.", for: UIControlState.normal)
             correctAnswer = "1"
             break
             
