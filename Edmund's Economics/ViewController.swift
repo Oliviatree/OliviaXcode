@@ -50,6 +50,46 @@ class ViewController: UIViewController {
         {
                 quizLevel = "Knight"
         }
+        if (quizScore < 1000)
+        {
+                quizLevel = "Peasant"
+        }
+        else if (quizScore < 2000)
+       {
+                quizLevel = "Merchant"
+       }
+       else if (quizScore < 3000)
+       {
+                quizLevel = "Lord"
+       }
+       else if (quizScore < 4000)
+       {
+                quizLevel = "Knight"
+       }
+       else if (quizScore < 5000)
+       {
+                quizLevel = "Baron"
+       }
+       else if (quizScore < 6000)
+       {
+                quizLevel = "Duke"
+       }
+       else if (quizScore < 7000)
+       {
+                quizLevel = "Prince"
+       }
+       else if (quizScore < 8000)
+       {
+                quizLevel = "King"
+       }
+       else if (quizScore < 9000)
+       {
+                quizLevel = "Emporer"
+       }
+       else if (quizScore < 10000)
+       {
+                quizLevel = "God"
+       }
         
          scoreDisplay.text = "\(quizScore)"
          levelDisplay.text = "\(quizLevel)"
