@@ -291,7 +291,7 @@ class ViewController: UIViewController {
             Question.text = "What does 'monopoly' mean?"
             Button1.setTitle("A market structure where there is only one firm, or a dominant firm, in the industry. There are high barriers to entry.", for: UIControlState.normal)
             Button2.setTitle("A market structure characterized by a small number of large firms dominating the industry due to high barriers to entry.", for: UIControlState.normal)
-            Button3.setTitle("A market structure charaterized by a large number of small firms, producing differentiated products, with no barriers to entry or exit.", for: UIControlState.normal)
+            Button3.setTitle("A market structure charaterized by a large number of small firms, producing differentiated products, with no barriers to entry or exit", for: UIControlState.normal)
             Button4.setTitle("A market structure where there are multiple firms in the industry. There are no barriers to entry.", for: UIControlState.normal)
             correctAnswer = "1"
             break
