@@ -198,7 +198,7 @@ class ViewController: UIViewController {
             Button1.setTitle("The action or process of investing money for profit.", for: UIControlState.normal)
             Button2.setTitle("Spending by firms on capital goods; the addition of capital stock to an economy.", for: UIControlState.normal)
             Button3.setTitle("The total money value of all final goods and services produced in an economy in a given time period, usually a year.", for: UIControlState.normal)
-            Button4.setTitle("The amount of money given to producers of a product by the government. A subsidy increases the supply of the good by effectively lowering the firms’ costs of production.", for: UIControlState.normal)
+            Button4.setTitle("The amount of money given to producers of a product by the government. A Subsidy increases the supply of the good by effectively lowering the firms’ costs of production.", for: UIControlState.normal)
             correctAnswer = "2"
             break
 
